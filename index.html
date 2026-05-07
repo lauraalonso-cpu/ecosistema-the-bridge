@@ -3,98 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ecosistema The Bridge 2026 | Suite Estratégica</title>
+    <title>Ecosistema The Bridge 2026 | Suite de Alianzas</title>
     
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <style>
-        /* 1. RESET Y ESTRUCTURA MAESTRA */
-        body { font-family: 'Inter', sans-serif; background-color: #f3f4f6; scroll-behavior: smooth; margin: 0; padding: 0; }
+        /* 1. CONFIGURACIÓN GLOBAL */
+        :root { --bridge-red: #EB1E23; --bridge-dark: #111827; }
+        body { font-family: 'Inter', sans-serif; background-color: #ffffff; scroll-behavior: smooth; margin: 0; overflow-x: hidden; }
         h1, h2, h3, h4 { font-family: 'Poppins', sans-serif; }
-        .bridge-red { color: #EB1E23; }
-        .bridge-bg-red { background-color: #EB1E23; }
         
-        /* Navegación Superior */
+        /* Navegación Estratégica */
         .master-nav {
             position: fixed; top: 0; left: 0; right: 0; height: 50px;
             background: #000; color: #fff; z-index: 10000;
-            display: flex; justify-content: center; align-items: center; gap: 25px;
-            font-size: 11px; font-weight: bold; text-transform: uppercase;
-            border-bottom: 2px solid #EB1E23; box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            display: flex; justify-content: center; align-items: center; gap: 30px;
+            font-size: 11px; font-weight: bold; text-transform: uppercase; letter-spacing: 1px;
+            border-bottom: 2px solid var(--bridge-red);
         }
-        .master-nav a { color: #fff; text-decoration: none; opacity: 0.7; transition: 0.3s; }
-        .master-nav a:hover { opacity: 1; color: #EB1E23; }
+        .master-nav a { color: #fff; text-decoration: none; opacity: 0.6; transition: 0.3s; }
+        .master-nav a:hover { opacity: 1; color: var(--bridge-red); }
 
-        /* Contenedores de Sección */
-        .section-container { position: relative; padding-top: 70px; min-height: 100vh; width: 100%; background: #fff; border-bottom: 4px solid #000; }
+        /* Contenedores */
+        .section-wrap { position: relative; padding-top: 70px; min-height: 100vh; border-bottom: 1px solid #eee; }
         
-        /* 2. ESTILOS ESPECÍFICOS INTEGRADOS */
+        /* Estilos compartidos de componentes */
+        .bridge-red { color: var(--bridge-red); }
+        .bridge-bg-red { background-color: var(--bridge-red); }
         .flyer-shadow { box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); }
-        .sidebar-item:hover { background-color: #f3f4f6; }
-        .sidebar-item.active { background-color: #f3f4f6; font-weight: 600; border-right: 3px solid #EB1E23; }
         .notion-card { transition: all 0.2s ease; border: 1px solid #e5e7eb; }
-        .notion-card:hover { border-color: #EB1E23; transform: translateY(-2px); }
-        .test-step { border-left: 2px solid #e5e7eb; padding-left: 20px; position: relative; margin-bottom: 30px; }
-        .test-step::before { content: ''; position: absolute; left: -6px; top: 0; width: 10px; height: 10px; background: #fff; border: 2px solid #EB1E23; border-radius: 50%; }
-
-        @media print { .no-print { display: none !important; } }
+        .notion-card:hover { border-color: var(--bridge-red); transform: translateY(-2px); }
+        
+        /* Ocultar resultados por defecto */
+        #report-container { display: none; scroll-margin-top: 100px; }
     </style>
 </head>
 <body>
 
-    <nav class="master-nav no-print">
-        <a href="#section-flyer"><i class="fa-solid fa-file-pdf mr-2"></i> 1. Flyer</a>
-        <a href="#section-landing"><i class="fa-solid fa-rocket mr-2"></i> 2. Landing</a>
-        <a href="#section-portal"><i class="fa-solid fa-table-columns mr-2"></i> 3. Partner Hub</a>
+    <nav class="master-nav">
+        <a href="#f-flyer">1. Flyer</a>
+        <a href="#f-landing">2. Landing</a>
+        <a href="#f-portal">3. Partner Hub & Test</a>
     </nav>
 
-    <section id="section-flyer" class="section-container bg-gray-100">
-        <div class="max-w-6xl mx-auto p-4 md:p-10">
-            <header class="text-center mb-12">
-                <h1 class="text-3xl font-black uppercase tracking-tighter">Visual <span class="bridge-red">Showcase</span></h1>
-                <p class="text-gray-500 text-sm">Maqueta conceptual para validación de diseño de Alianzas</p>
-            </header>
-
+    <section id="f-flyer" class="section-wrap bg-gray-50">
+        <div class="max-w-6xl mx-auto p-6 md:p-12">
+            <div class="text-center mb-10">
+                <span class="text-[10px] font-black uppercase tracking-[0.3em] text-gray-400">Activo Tangible</span>
+                <h2 class="text-3xl font-black uppercase mt-2">Flyer <span class="bridge-red">Estratégico</span></h2>
+            </div>
             <div class="grid lg:grid-cols-2 gap-12">
-                <div class="bg-white aspect-[1/1.41] flyer-shadow p-8 flex flex-col border border-gray-100 rounded-sm">
-                    <div class="flex justify-between items-start mb-10">
+                <div class="bg-white aspect-[1/1.41] flyer-shadow p-10 flex flex-col border border-gray-100">
+                    <div class="flex justify-between items-start mb-12">
                         <div class="flex items-center gap-2">
                             <div class="w-8 h-8 bridge-bg-red rounded-full flex items-center justify-center text-white font-black text-xs">B</div>
                             <span class="font-black text-sm tracking-tighter">THE BRIDGE</span>
                         </div>
                     </div>
                     <div class="mb-10">
-                        <h3 class="text-2xl font-black leading-tight text-gray-900 mb-2">Mucho más que talento: <br/><span class="text-gray-400">tu socio estratégico.</span></h3>
-                        <p class="text-sm font-bold bridge-red">Impulsa tu negocio con The Bridge.</p>
+                        <h3 class="text-3xl font-black leading-tight mb-4">Mucho más que talento: <br><span class="text-gray-400">tu socio estratégico.</span></h3>
+                        <p class="font-bold bridge-red">Impulsa tu negocio con The Bridge.</p>
                     </div>
-                    <div class="flex-1 space-y-5 text-[12px]">
-                        <p><span class="font-black">Talento:</span> Red de +4.000 egresados.</p>
-                        <p><span class="font-black">Formación:</span> Programas In-Company ad-hoc.</p>
-                        <p><span class="font-black">Sede AZCA:</span> Espacios en el centro financiero.</p>
+                    <div class="space-y-6 text-sm">
+                        <p><strong>Talento:</strong> Acceso directo a +4.000 perfiles tech.</p>
+                        <p><strong>Formación:</strong> Programas Upskilling & Reskilling.</p>
+                        <p><strong>Sede AZCA:</strong> Eventos en el corazón financiero.</p>
                     </div>
-                    <div class="mt-auto bg-gray-50 p-4 rounded-xl border border-gray-200">
-                        <div class="flex justify-between text-[10px] font-bold">
-                            <span>IA Readiness Test</span>
-                            <span>Partner Hub</span>
+                    <div class="mt-auto pt-8 border-t border-gray-100">
+                        <div class="flex justify-between items-center text-[10px] font-bold text-gray-400 uppercase tracking-widest">
+                            <span>Sello UAM</span>
+                            <span>IA Readiness</span>
                         </div>
                     </div>
                 </div>
-                <div class="bg-white aspect-[1/1.41] flyer-shadow p-8 flex flex-col border border-gray-100 rounded-sm relative overflow-hidden">
-                    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1200" class="absolute inset-0 w-full h-full object-cover opacity-5 z-0">
+                <div class="bg-gray-900 aspect-[1/1.41] flyer-shadow p-10 flex flex-col text-white relative overflow-hidden">
                     <div class="relative z-10 h-full flex flex-col">
-                        <div class="grid grid-cols-3 gap-3 mb-10">
-                            <div class="bridge-bg-red text-white p-3 rounded-xl text-center"><p class="text-xl font-black">+4k</p></div>
-                            <div class="bridge-bg-red text-white p-3 rounded-xl text-center"><p class="text-xl font-black">+500</p></div>
-                            <div class="bg-gray-900 text-white p-3 rounded-xl text-center"><p class="text-xl font-black">UAM</p></div>
-                        </div>
-                        <div class="mt-auto flex items-end gap-6 pt-8 border-t">
-                            <div class="flex-1 text-[10px]">
-                                <p class="font-black text-[12px]">Laura Alonso Puig</p>
-                                <p class="bridge-red font-bold">laura.alonso@thebridge.tech</p>
+                        <div class="mb-10">
+                            <h3 class="text-xl font-black bridge-red uppercase tracking-widest mb-2">Resultados Reales</h3>
+                            <div class="grid grid-cols-2 gap-4 mt-6">
+                                <div class="bg-white/10 p-4 rounded-xl"><p class="text-2xl font-black">+4.000</p><p class="text-[9px] uppercase">Alumni</p></div>
+                                <div class="bg-white/10 p-4 rounded-xl"><p class="text-2xl font-black">92%</p><p class="text-[9px] uppercase">Empleabilidad</p></div>
                             </div>
-                            <div class="w-16 h-16 bg-gray-100 flex items-center justify-center rounded"><i class="fa-solid fa-qrcode text-3xl"></i></div>
+                        </div>
+                        <div class="mt-auto flex items-center gap-6">
+                            <div class="flex-1">
+                                <p class="font-black text-lg">Laura Alonso Puig</p>
+                                <p class="bridge-red text-sm font-bold">laura.alonso@thebridge.tech</p>
+                            </div>
+                            <div class="w-20 h-20 bg-white p-2 rounded-lg">
+                                <i class="fa-solid fa-qrcode text-black text-5xl"></i>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -102,134 +102,134 @@
         </div>
     </section>
 
-    <section id="section-landing" class="section-container">
-        <div class="max-w-7xl mx-auto px-6 py-20">
-            <div class="inline-flex items-center gap-2 bg-red-50 text-[#E30613] px-4 py-1.5 rounded-full text-[10px] font-black uppercase tracking-[0.2em] mb-8">
+    <section id="f-landing" class="section-wrap">
+        <div class="max-w-5xl mx-auto px-6 py-20">
+            <div class="inline-flex items-center gap-2 bg-red-50 text-red-600 px-4 py-1 rounded-full text-[10px] font-black uppercase tracking-widest mb-8">
                 Alianza Estratégica UAM
             </div>
-            <h2 class="text-5xl md:text-7xl font-extrabold tracking-tighter mb-8">
-                Tu <span class="bridge-red">socio estratégico</span> en la era digital.
+            <h2 class="text-5xl md:text-7xl font-black tracking-tighter mb-8 leading-[0.9]">
+                Tu socio en la <br><span class="bridge-red italic">era digital.</span>
             </h2>
             <p class="text-xl text-gray-500 mb-12 max-w-2xl font-light">
-                Impulsa el potencial de tu negocio con el ecosistema de The Bridge y la UAM.
+                Conectamos el rigor académico de la UAM con la agilidad tecnológica de The Bridge.
             </p>
-            <div class="grid md:grid-cols-3 gap-6">
-                <div class="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm">
-                    <h3 class="font-bold mb-2">Talento High Performance</h3>
-                    <p class="text-sm text-gray-500">Acceso a red de graduados líderes.</p>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-8 bg-gray-50 rounded-3xl border border-gray-100">
+                    <i class="fa-solid fa-brain bridge-red text-2xl mb-4"></i>
+                    <h4 class="font-bold mb-2">IA Diagnosis</h4>
+                    <p class="text-sm text-gray-500">Evaluamos la madurez tecnológica de tu equipo con herramientas propias.</p>
                 </div>
-                <div class="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm">
-                    <h3 class="font-bold mb-2">Sede en AZCA</h3>
-                    <p class="text-sm text-gray-500">Eventos en el corazón financiero.</p>
+                <div class="p-8 bg-gray-50 rounded-3xl border border-gray-100">
+                    <i class="fa-solid fa-users-gear bridge-red text-2xl mb-4"></i>
+                    <h4 class="font-bold mb-2">Talent Hub</h4>
+                    <p class="text-sm text-gray-500">Pipeline de perfiles especializados en Data, Fullstack y Ciber.</p>
                 </div>
-                <div class="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm">
-                    <h3 class="font-bold mb-2">IA Test</h3>
-                    <p class="text-sm text-gray-500">Diagnóstico de madurez digital.</p>
+                <div class="p-8 bg-gray-50 rounded-3xl border border-gray-100">
+                    <i class="fa-solid fa-city bridge-red text-2xl mb-4"></i>
+                    <h4 class="font-bold mb-2">Espacios AZCA</h4>
+                    <p class="text-sm text-gray-500">Acceso a instalaciones premium para eventos y networking.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="section-portal" class="section-container flex">
-        <aside class="w-64 bg-[#fbfbfa] border-r border-gray-200 hidden md:flex flex-col p-6 sticky top-[50px] h-[calc(100vh-50px)]">
-            <div class="font-black text-sm mb-8">PARTNER HUB</div>
-            <nav class="space-y-4 text-sm font-medium text-gray-500">
-                <div class="text-black font-bold">Inicio</div>
-                <div>Talent Showcase</div>
-                <div class="text-red-600 font-bold">IA & Innovación</div>
-                <div>Eventos & AZCA</div>
+    <section id="f-portal" class="section-wrap flex">
+        <aside class="w-64 bg-gray-50 border-r p-8 hidden lg:block sticky top-[50px] h-[calc(100vh-50px)]">
+            <div class="font-black text-xs text-gray-400 mb-10 tracking-widest">PARTNER DASHBOARD</div>
+            <nav class="space-y-6 text-sm font-bold">
+                <div class="text-gray-300">Talent Showcase</div>
+                <div class="bridge-red border-r-4 border-red-600">IA Readiness Test</div>
+                <div class="text-gray-300">AZCA Bookings</div>
+                <div class="text-gray-300">Academy Analytics</div>
             </nav>
         </aside>
 
-        <main class="flex-1 p-6 md:p-12 max-w-5xl mx-auto">
+        <main class="flex-1 p-8 md:p-16 max-w-4xl">
             <div class="mb-12">
-                <h1 class="text-4xl font-black text-gray-900 mb-2">IA Readiness Test</h1>
-                <p class="text-gray-500">Realizamos un diagnóstico basado en datos para tu equipo.</p>
+                <h2 class="text-4xl font-black mb-2">IA Readiness <span class="bridge-red text-lg uppercase tracking-widest ml-2">v2.0</span></h2>
+                <p class="text-gray-500">Diagnóstico consultivo de madurez digital para partners corporativos.</p>
             </div>
 
-            <div class="bg-white border border-gray-200 rounded-3xl p-8 shadow-sm mb-12">
-                <div class="grid md:grid-cols-2 gap-10">
-                    <div class="space-y-6">
-                        <div class="test-step">
-                            <h4 class="text-xs font-black uppercase text-red-600 mb-2">Pregunta 1</h4>
-                            <p class="text-sm font-bold mb-4">¿Uso de IA Generativa en el día a día?</p>
-                            <div class="grid gap-2">
-                                <button onclick="showReport('A')" class="text-left p-3 text-xs border rounded-lg hover:border-red-500">A) < 10% (Exploración)</button>
-                                <button onclick="showReport('B')" class="text-left p-3 text-xs border rounded-lg hover:border-red-500">B) 10% - 50% (Adopción)</button>
-                                <button onclick="showReport('C')" class="text-left p-3 text-xs border rounded-lg hover:border-red-500">C) > 50% (Avanzado)</button>
-                            </div>
+            <div class="bg-white border-2 border-gray-100 rounded-[2rem] p-10 shadow-sm">
+                <div class="space-y-8">
+                    <div>
+                        <span class="text-[10px] font-black bridge-red uppercase mb-4 block">Evaluación de Proceso</span>
+                        <h4 class="text-xl font-bold mb-6 italic">"¿En qué medida la IA Generativa está integrada en los workflows de tu equipo?"</h4>
+                        <div class="grid gap-3">
+                            <button onclick="generarResultados('A')" class="w-full text-left p-5 border-2 rounded-2xl hover:border-red-600 hover:bg-red-50 transition-all font-medium text-sm">
+                                A) Exploratorio: Uso individual y no protocolizado.
+                            </button>
+                            <button onclick="generarResultados('B')" class="w-full text-left p-5 border-2 rounded-2xl hover:border-red-600 hover:bg-red-50 transition-all font-medium text-sm">
+                                B) Integrado: Herramientas corporativas y formación básica.
+                            </button>
+                            <button onclick="generarResultados('C')" class="w-full text-left p-5 border-2 rounded-2xl hover:border-red-600 hover:bg-red-50 transition-all font-medium text-sm">
+                                C) Avanzado: Automatización de procesos y cultura Data-Driven.
+                            </button>
                         </div>
-                    </div>
-                    <div class="bg-gray-50 rounded-2xl p-6 text-center flex flex-col justify-center">
-                        <div class="text-4xl mb-4">📊</div>
-                        <p class="text-xs font-bold text-gray-400 uppercase">Simulador de Resultados</p>
-                        <p class="text-[10px] text-gray-500 mt-2 italic">Haz clic en una opción de la izquierda para ver el reporte final.</p>
                     </div>
                 </div>
             </div>
 
-            <div id="report-container" class="hidden mt-10 scroll-mt-24">
-                <div id="report-content" class="bg-white border-t-8 border-black rounded-3xl shadow-2xl overflow-hidden">
+            <div id="report-container" class="mt-16">
+                <div id="report-content" class="bg-gray-900 rounded-[2.5rem] overflow-hidden text-white shadow-2xl">
                     </div>
             </div>
         </main>
     </section>
 
     <script>
-        const reports = {
-            'A': {
-                title: 'El Explorador Prudente', color: '#3b82f6', icon: '🧭',
-                result: '¡Estás en modo descubrimiento! Tu equipo tiene curiosidad pero le falta la brújula técnica.',
-                avatar: '<i class="fa-solid fa-user-astronaut text-6xl text-blue-500"></i>'
-            },
-            'B': {
-                title: 'El Arquitecto en Obras', color: '#f59e0b', icon: '🏗️',
-                result: '¡Estás construyendo el futuro! Tienes herramientas, pero necesitas asegurar el talento.',
-                avatar: '<i class="fa-solid fa-helmet-safety text-6xl text-amber-500"></i>'
-            },
-            'C': {
-                title: 'El Cyborg Avanzado', color: '#8b5cf6', icon: '⚡',
-                result: '¡Nivel Galáctico! Tu empresa vuela alto. Ahora el reto es no perder el ritmo.',
-                avatar: '<i class="fa-solid fa-bolt-lightning text-6xl text-purple-500"></i>'
-            }
-        };
-
-        function showReport(type) {
-            const data = reports[type];
+        function generarResultados(perfil) {
             const container = document.getElementById('report-container');
             const content = document.getElementById('report-content');
             
-            container.classList.remove('hidden');
-            content.style.borderColor = data.color;
-            
+            container.style.display = 'block';
+
+            let data = {};
+            if(perfil === 'A') {
+                data = {
+                    nombre: "El Explorador Tech",
+                    color: "#3b82f6",
+                    desc: "Tu organización está en la fase de 'Curiosidad Digital'. Existe talento individual pero falta una estructura corporativa que potencie la IA.",
+                    fase: "Fase 1: Alfabetización"
+                };
+            } else if(perfil === 'B') {
+                data = {
+                    nombre: "El Arquitecto Digital",
+                    color: "#f59e0b",
+                    desc: "Tenéis los cimientos. La IA ya no es una opción, es una herramienta diaria. El reto ahora es la especialización del talento.",
+                    fase: "Fase 2: Escalabilidad"
+                };
+            } else {
+                data = {
+                    nombre: "El Líder Disruptor",
+                    color: "#8b5cf6",
+                    desc: "Nivel avanzado. Vuestra ventaja competitiva reside en la optimización extrema. Necesitáis partners de innovación constante.",
+                    fase: "Fase 3: Vanguardia"
+                };
+            }
+
             content.innerHTML = `
-                <div class="bg-gray-900 p-6 text-white flex justify-between items-center">
-                    <div class="flex items-center gap-3">
-                        <span class="text-2xl">${data.icon}</span>
-                        <h3 class="text-lg font-black">${data.title}</h3>
-                    </div>
-                    <span class="text-[10px] font-bold uppercase opacity-50">Perfil ${type}</span>
-                </div>
-                <div class="p-10 flex flex-col md:flex-row gap-10 items-center">
-                    <div class="w-full md:w-1/3 text-center">
-                        <div class="w-32 h-32 bg-gray-50 rounded-full mx-auto flex items-center justify-center mb-4 border-4" style="border-color:${data.color}">
-                            ${data.avatar}
+                <div class="p-10 md:p-16">
+                    <div class="flex flex-col md:flex-row gap-12 items-center">
+                        <div class="text-center md:text-left flex-1">
+                            <span class="inline-block px-4 py-1 rounded-full text-[10px] font-black uppercase mb-4" style="background:${data.color}33; color:${data.color}">
+                                ${data.fase}
+                            </span>
+                            <h3 class="text-5xl font-black mb-6 tracking-tighter">Perfil: <br><span style="color:${data.color}">${data.nombre}</span></h3>
+                            <p class="text-gray-400 text-lg leading-relaxed mb-8">${data.desc}</p>
+                            <button class="bridge-bg-red px-8 py-4 rounded-xl font-black uppercase text-xs tracking-widest hover:scale-105 transition-all">
+                                Solicitar Informe Completo
+                            </button>
                         </div>
-                        <p class="text-xs font-bold text-gray-400 uppercase italic">Avatar Sugerido</p>
-                    </div>
-                    <div class="flex-1 space-y-6">
-                        <div class="bg-gray-50 p-6 rounded-2xl border">
-                            <p class="text-lg font-bold text-gray-800">${data.result}</p>
+                        <div class="w-64 h-64 bg-white/5 rounded-full flex items-center justify-center border-4 border-dashed border-white/10">
+                            <i class="fa-solid fa-bolt text-7xl" style="color:${data.color}"></i>
                         </div>
-                        <button class="bridge-bg-red text-white w-full py-4 rounded-xl font-bold uppercase tracking-widest text-xs">
-                            Agendar Consultoría Personalizada
-                        </button>
                     </div>
                 </div>
             `;
-            
+
             setTimeout(() => {
-                container.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                container.scrollIntoView({ behavior: 'smooth' });
             }, 100);
         }
     </script>
